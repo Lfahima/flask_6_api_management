@@ -1,0 +1,31 @@
+{
+    "definitions": {},
+    "info": {
+      "description": "powered by Flasgger",
+      "termsOfService": "/tos",
+      "title": "A swagger API",
+      "version": "0.0.1"
+    },
+    "paths": {
+      "/hello": {
+        "get": {
+          "parameters": [
+            {
+              "default": "Fahima",
+              "in": "query",
+              "name": "name",
+              "required": false,
+              "type": "string"
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "Returns a JSON object with a message that says ```Hello `name`!```"
+            }
+          },
+          "summary": "This is an example hello world function that takes in a name and if it is not provided it uses Fahima"
+        }
+      }
+    },
+    "swagger": "2.0"
+  }
